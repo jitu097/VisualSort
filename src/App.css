@@ -1,0 +1,167 @@
+/* Box Sizing Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #ece9e6, #ffffff); /* Added gradient background */
+  color: #212529;
+  line-height: 1.6;
+}
+
+/* Sorting Visualizer Container */
+.array-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 70vh; /* Increased height */
+  width: 90%; /* Increased width */
+  max-width: 1400px; /* Increased max width */
+  margin: 20px auto;
+  /* Removed the box styles to eliminate the border and background */
+  /* border: 1px solid #ccc; */
+  /* background-color: #ffffff; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  overflow: hidden;
+  padding: 10px;
+}
+
+/* Array Bar Styles */
+.array-bar {
+  flex: 1;
+  margin: 0 1px;
+  background-color: turquoise;
+  transition: height 0.2s ease, background-color 0.2s ease;
+  border-radius: 2px;
+  position: relative;
+  max-height: 100%; /* Ensure bars don't exceed container height */
+}
+
+.array-bar.changing {
+  background-color: #ff5722; /* Color when changing */
+}
+
+.array-bar.swapping {
+  background-color: #4caf50; /* Color when swapping */
+}
+
+/* Button Group Styles */
+.button-group {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Enhanced Button Styles */
+.button-group button {
+  padding: 10px 15px; /* Adjusted padding for full names */
+  font-size: 1rem; /* Increased font size for readability */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  color: white;
+  min-width: 150px; /* Increased width to accommodate full text */
+  height: 50px; /* Fixed height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Individual Button Colors */
+.btn-merge {
+  background-color: #007bff;
+}
+
+.btn-merge:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.btn-quick {
+  background-color: #28a745;
+}
+
+.btn-quick:hover {
+  background-color: #1e7e34;
+  transform: scale(1.05);
+}
+
+.btn-bubble {
+  background-color: #dc3545;
+}
+
+.btn-bubble:hover {
+  background-color: #bd2130;
+  transform: scale(1.05);
+}
+
+.btn-reset {
+  background-color: #6c757d;
+}
+
+.btn-reset:hover {
+  background-color: #5a6268;
+  transform: scale(1.05);
+}
+
+/* Footer Styling */
+/* Removed Footer Styles */
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .array-container {
+    height: 40vh;
+    width: 95%;
+  }
+
+  .button-group button {
+    width: 120px;
+    height: 40px;
+    padding: 8px 12px;
+    font-size: 0.875rem;
+  }
+}
+
+/* Additional Styles for Enhanced Aesthetics */
+
+/* Hover Effect for Array Bars */
+.array-bar:hover {
+  opacity: 0.8;
+}
+
+/* Container Utility Classes */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+/* Button Utility Classes */
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}

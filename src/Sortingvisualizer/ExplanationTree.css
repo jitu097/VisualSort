@@ -1,0 +1,47 @@
+/* Explanation Tree Container */
+.explanation-tree {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+.explanation-tree h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+/* Steps List */
+.explanation-tree ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Individual Step Styling */
+.explanation-tree li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Step Number Styling */
+.step-number {
+    display: inline-block;
+    width: 25px;
+    font-weight: bold;
+    color: #000;
+    margin-right: 10px;
+}
+
+/* Step Title */
+.explanation-tree li strong {
+    margin-right: 5px;
+}
